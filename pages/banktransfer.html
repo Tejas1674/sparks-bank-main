@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparks Bank Transfer</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topnav">
+        <img src="https://internship.thesparksfoundation.info/assests/img/logo.png" alt="">
+        <h1 class="name">Sparks Bank</h1>
+
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="banktransfer.html">Accounts</a></li>
+                <li><a href="transactions.html">Transfers</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <main>
+        <div class="addname">
+
+            <span>
+                <label>Name:</label>
+                <input type="text" id="name-input">
+                <label>Initial Balance:</label>
+                <input type="number" id="initial-balance-input">
+                <button id="add-name-btn">Add User</button>
+            </span>
+
+            <span>
+                <input placeholder="search by name" id="search-input">
+                <button id="search-btn">Search</button>
+            </span>
+
+
+        </div>
+
+
+
+        <table id="table">
+            <thead>
+                <th>SL NO.</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Date Registered</th>
+                <th>Delete Account</th>
+                <th>Edit</th>
+                <th>Account Balance</th>
+                <th>Transfer Money</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section hidden id="update-row">
+            <div class="addname2">
+                <h4>Edit Details:</h4>
+                <label>Name:</label>
+                <input placeholder="new name" type="text" id="update-name-input">
+                <input placeholder="new balance" type="number" id="update-balance-input">
+                <button id='update-row-btn'>Update</button>
+            </div>
+        </section>
+
+        <section hidden id="transfer">
+            <div class="addname2">
+                <h4>Transfer Details:</h4>
+                <label>Recipeint ID:</label>
+                <input placeholder="reciever" type="text" id="transfer-id">
+                <br>
+                <label>Amount:</label>
+                <input placeholder="Amount" type="number" id="transfer-amount">
+                <br>
+                <button id='transfer-btn'>Transfer</button>
+            </div>
+        </section>
+
+    </main>
+    <script src="../index.js"></script>
+    <footer>
+        Copyright &copy; Bikranta Sarkar 2021
+    </footer>
+</body>
+
+</html>
